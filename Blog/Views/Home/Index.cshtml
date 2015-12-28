@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Blog.Models.History>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <form id="history" action="@Url.Action("Create", "Home")">
+        <div class="form-inline">
+            <div class="form-group">
+                <label class="control-label col-md-2">Title</label>
+                <div class="col-md-10">
+                    <input type="text" name="Title" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" id="saveHistory" class="btn btn-default btn-raised" />
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div id="histories">
+        @{
+            Html.RenderPartial("List");
+        }
+    </div>
+</div>
