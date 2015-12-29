@@ -3,42 +3,62 @@
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+>
 <div class="row">
-    <div class="card" style="margin-top:45px; height:10%">
-        <div class="card-height-indicator"></div>
-        <div class="card-content">
-            <div class="card-image" style="height:30%">
+    <div class="col-md-12" style="height:25%">
+        @*<div class="card" style="margin-top:45px; height:10%">
+            <div class="card-height-indicator"></div>
+            <div class="card-content">
+                <div class="card-image" style="height:30%">
+                    <img src="http://lorempixel.com/600/300/fashion" alt="Loading image...">
+                    <h3 class="card-image-headline">
+                        @Model.Title
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p>Created by <b>@Model.CreatedBy</b> in @Model.CreatedOn</p>
+                </div>
+            </div>
+        </div>*@
+
+        <div class="cards" style="margin-top:45px;">
+            <div class="card-height-indicator"></div>
+            <div class="cards-image" style="height:30%">
                 <img src="http://lorempixel.com/600/300/fashion" alt="Loading image...">
-                <h3 class="card-image-headline">
+                <h3 class="cards-title">
                     @Model.Title
                 </h3>
             </div>
-            <div class="card-body">
+
+            <div class="cards-content">
                 <p>Created by <b>@Model.CreatedBy</b> in @Model.CreatedOn</p>
             </div>
         </div>
     </div>
-    
-    <form id="post" action="@Url.Action("CreatePost", "Home")">
-        <input type="hidden" value="@Model.Id" name="HistoryId" />
-        <div class="form-horizontal">
-            <div class="form-group">
-                <label class="control-label col-md-2">Body</label>
-                <div class="col-md-10">
-                    <input type="text" name="Body" class="form-control" />
+    <div class="col-md-12">
+        <form id="post" action="@Url.Action("CreatePost", "Home")">
+            <input type="hidden" value="@Model.Id" name="HistoryId" />
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-md-2">Body</label>
+                    <div class="col-md-10">
+                        <input type="text" name="Body" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" id="savePost" value="Save" data-unique="@Model.Id" class="btn btn-default" />
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" id="savePost" value="Save" data-unique="@Model.Id" class="btn btn-default" />
-                </div>
-            </div>
+        </form>
+        <div id="posts">
+            @{
+                Html.RenderAction("PostsList", "Home", new { id = Model.Id });
+            }
         </div>
-    </form>
-    <div id="posts">
-       @{
-           Html.RenderAction("PostsList", "Home",  new { id = Model.Id });
-       }
     </div>
+    
+ 
 </div>
 
