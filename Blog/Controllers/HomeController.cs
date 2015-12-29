@@ -77,7 +77,7 @@ namespace Blog.Controllers
                 history.ImagesUrls = new List<string>()
                 {
 
-                    "http://lorempixel.com/400/200/city"
+                    "http://loremflickr.com/360/216/city"
                 };
             }
             LoadHistories();

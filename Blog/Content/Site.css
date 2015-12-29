@@ -1,29 +1,25 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
-
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
-    white-space: normal;
+  white-space: normal;
 }
-
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-    max-width: 280px;
+  max-width: 280px;
 }
-
-
+/* Cards */
 .cards {
   margin-top: 10px;
   box-sizing: border-box;
@@ -32,23 +28,22 @@ textarea {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .cards span.cards-title {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 300;
-    text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
-
 .cards .cards-image {
   position: relative;
   overflow: hidden;
-  height:10%;
+  height: 10%;
 }
 .cards .cards-image img {
   border-radius: 2px 2px 0 0;
   background-clip: padding-box;
   position: relative;
   z-index: -1;
-  width:100%;
+  width: 100%;
 }
 .cards .cards-image span.cards-title {
   position: absolute;
@@ -83,3 +78,47 @@ textarea {
   color: #ffd8a6;
   text-decoration: none;
 }
+/* End Cards */
+/* Navbar color*/
+.navbar.navbar-blue-gray {
+  background-color: #455A64;
+  color: rgba(255, 255, 255, 0.84);
+}
+/* Material Design Color Line */
+.form-control {
+  background-image: linear-gradient(#2196f3, #2196f3), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-blue-light .form-control {
+  background-image: linear-gradient(#03A9F4, #03A9F4), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-black .form-control {
+  background-image: linear-gradient(#000000, #000000), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-black-light .form-control {
+  background-image: linear-gradient(#000000, #000000), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-green .form-control {
+  background-image: linear-gradient(#4CAF50, #4CAF50), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-green-light .form-control {
+  background-image: linear-gradient(#8BC34A, #8BC34A), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-purple .form-control {
+  background-image: linear-gradient(#9C27B0, #9C27B0), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-purple-light .form-control {
+  background-image: linear-gradient(#673AB7, #673AB7), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-red .form-control {
+  background-image: linear-gradient(#F44336, #F44336), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-red-light .form-control {
+  background-image: linear-gradient(#F44336, #F44336), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-yellow .form-control {
+  background-image: linear-gradient(#FFEB3B, #FFEB3B), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+.skin-yellow-light .form-control {
+  background-image: linear-gradient(#FFC107, #FFC107), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+/* End Material Design Color Line */

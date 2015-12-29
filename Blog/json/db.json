@@ -1,40 +1,16 @@
 [
   {
-    "Id": "788297be-c8e9-4983-bc48-46a983f3c9df",
-    "Title": "Orign",
+    "Id": "f09a066d-412f-4362-bdca-526ed70f29b6",
+    "Title": "Origin",
     "TitleUrl": null,
     "ImagesUrls": [
-      "http://lorempixel.com/400/200/city"
+      "http://loremflickr.com/360/216/city"
     ],
-    "CreatedOn": "2015-12-26T17:05:08.7181155-04:00",
+    "CreatedOn": "2015-12-29T16:22:42.4970766-04:00",
     "CreatedBy": "Jesús",
     "Location": null,
     "Posts": [
-      {
-        "HistoryId": "788297be-c8e9-4983-bc48-46a983f3c9df",
-        "Body": "Agregando un nuevo post para esta historia que hoy empieza",
-        "Created": "2015-12-29T09:52:17.750729-04:00"
-      },
-      {
-        "HistoryId": "788297be-c8e9-4983-bc48-46a983f3c9df",
-        "Body": "<p>Desde un editor \"moderno\"&nbsp;</p>\r\n<pre>function(){} <br /><br /></pre>",
-        "Created": "2015-12-29T15:22:29.8808511-04:00"
-      },
-      {
-        "HistoryId": "788297be-c8e9-4983-bc48-46a983f3c9df",
-        "Body": "<p>Desde un editor \"moderno2\"&nbsp;</p>\r\n<pre>function(){} <br /><br /></pre>",
-        "Created": "2015-12-29T15:23:56.5515173-04:00"
-      },
-      {
-        "HistoryId": "788297be-c8e9-4983-bc48-46a983f3c9df",
-        "Body": "<p>Desde un editor \"moderno3\"&nbsp;</p>\r\n<pre>function(){} <br /><br /></pre>",
-        "Created": "2015-12-29T15:24:20.8969516-04:00"
-      },
-      {
-        "HistoryId": "788297be-c8e9-4983-bc48-46a983f3c9df",
-        "Body": "<p>Desde un editor \"moderno4\"&nbsp;</p>\r\n<pre>function(){} <br /><br /></pre>",
-        "Created": "2015-12-29T15:24:35.6534271-04:00"
-      }
+    
     ]
   }
 ]
