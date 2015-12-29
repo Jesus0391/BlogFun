@@ -9,6 +9,12 @@
     "CreatedOn": "2015-12-26T17:05:08.7181155-04:00",
     "CreatedBy": "Jesús",
     "Location": null,
-    "Posts": null
+    "Posts": [
+      {
+        "HistoryId": "788297be-c8e9-4983-bc48-46a983f3c9df",
+        "Body": "Agregando un nuevo post para esta historia que hoy empieza",
+        "Created": "2015-12-29T09:52:17.750729-04:00"
+      }
+    ]
   }
 ]

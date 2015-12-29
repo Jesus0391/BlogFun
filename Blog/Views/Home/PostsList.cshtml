@@ -1,16 +1,13 @@
 ﻿@model IEnumerable<Blog.Models.Post>
 @if (Model != null)
 {
-    
-        <div class="card">
-            <div class="card-height-indicator"></div>
-            @foreach (var post in Model.OrderBy(o => o.Created))
-            {
-                <div class="card-content">
-                    <div class="card-body">
-                        <p>@post.Body</p>
-                    </div>
-                </div>
-            }
-        </div>
-    }
+    <div class="cards">
+        @foreach (var post in Model.OrderBy(o => o.Created))
+        {
+            <div class="cards-content">
+                <b>@post.Created</b>
+                <p>@post.Body</p>
+            </div>
+        }
+    </div>
+}

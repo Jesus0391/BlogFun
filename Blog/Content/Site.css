@@ -41,12 +41,14 @@ textarea {
 .cards .cards-image {
   position: relative;
   overflow: hidden;
+  height:10%;
 }
 .cards .cards-image img {
   border-radius: 2px 2px 0 0;
   background-clip: padding-box;
   position: relative;
   z-index: -1;
+  width:100%;
 }
 .cards .cards-image span.cards-title {
   position: absolute;
