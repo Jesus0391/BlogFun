@@ -87,7 +87,7 @@ namespace Blog.Controllers
                 JsonRequestBehavior.AllowGet);
         }
         //Save Post
-        [HttpPost]
+        [HttpPost, ValidateInput(false)]
         public JsonResult CreatePost(Post post)
         {
             post.Created = DateTime.Now;

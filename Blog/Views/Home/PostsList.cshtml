@@ -2,11 +2,12 @@
 @if (Model != null)
 {
     <div class="cards">
-        @foreach (var post in Model.OrderBy(o => o.Created))
+        @foreach (var post in Model.OrderByDescending(o => o.Created))
         {
+            post.Body = post.Body.Replace("<pre", "<pre class='prettyprint linenums'");
             <div class="cards-content">
                 <b>@post.Created</b>
-                <p>@post.Body</p>
+                <p>@Html.Raw(post.Body)</p>
             </div>
         }
     </div>

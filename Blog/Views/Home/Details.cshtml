@@ -7,7 +7,7 @@
     <div class="col-md-12" style="height:25%">
         <div class="cards" style="margin-top:45px;">
             <div class="cards-image">
-                <img src="http://loremflickr.com/1140/240" alt="Loading image...">
+                <img src="http://loremflickr.com/1140/240/paris" alt="Loading image...">
                 <span class="cards-title">
                         @Model.Title
                 </span>
@@ -24,14 +24,14 @@
                     <input type="hidden" value="@Model.Id" name="HistoryId" />
                     <div class="form-horizontal">
                         <div class="form-group">
-                            <label class="control-label col-md-2">Body</label>
-                            <div class="col-md-10">
-                                <input type="text" name="Body" class="form-control" />
+                            <div class="col-md-offset-11 col-md-1">
+                                <input type="submit" id="savePost" value="Save" 
+                                       data-unique="@Model.Id" class="btn btn-primary  btn-raised" />
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" id="savePost" value="Save" data-unique="@Model.Id" class="btn btn-default" />
+                            <div class="col-md-12">
+                                <textarea  name="Body" id="Body"></textarea>
                             </div>
                         </div>
                     </div>
@@ -49,3 +49,28 @@
  
 </div>
 
+@section scripts{
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: [
+                'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                'searchreplace wordcount visualblocks visualchars code fullscreen',
+                'insertdatetime media nonbreaking save table contextmenu directionality',
+                'emoticons template paste textcolor colorpicker textpattern imagetools'
+            ],
+            toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+            toolbar2: 'print preview media | forecolor backcolor emoticons',
+            image_advtab: true,
+            setup: function (editor) {
+                editor.on('change', function () {
+                    tinymce.triggerSave();
+                }).on('SaveContent', function (i) {
+                    //i.content = i.content.replace(/&#39/g, "&apos");
+                });
+            }
+        });
+    </script>
+}

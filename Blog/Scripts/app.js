@@ -6,7 +6,6 @@
         
         $.post(url, $("#history").serialize(), function (result) {
             showHistories();
-            alert(result.message);
         }).error(function (result) {
             console.log(result);
         });
@@ -18,7 +17,6 @@
         var id = $(this).data('unique');
         $.post(url, $("#post").serialize(), function (result) {
             showPosts(id);
-            alert(result.message);
         }).error(function (result) {
             console.log(result);
         });
