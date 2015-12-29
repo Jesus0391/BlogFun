@@ -10,7 +10,11 @@
     "CreatedBy": "Jesús",
     "Location": null,
     "Posts": [
-    
+      {
+        "HistoryId": "f09a066d-412f-4362-bdca-526ed70f29b6",
+        "Body": "<p>Prueba de un comentario</p>",
+        "Created": "2015-12-29T16:50:44.3332434-04:00"
+      }
     ]
   }
 ]
