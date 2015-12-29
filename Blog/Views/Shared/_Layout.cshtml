@@ -11,6 +11,11 @@
     @Styles.Render("~/Content/css")
 </head>
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <div class="navbar navbar-blue-gray navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -47,6 +52,20 @@
     <script src="~/bower_components/bootstrap-material-design/dist/js/material.js"></script>
     <script src="~/bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
     <script src="~/Scripts/app.js"></script>
+    <script type="text/javascript">
+        $(document)
+            .ajaxStop(function () {
+                $("#loader-wrapper").hide();
+            })
+            .ajaxSend(function (event, jqxhr, settings) { //verificar la url que se esta generando para evitar el loading de las notificaciones
+                if (settings.url != "/Notifications/GetNotifications") {
+                    $("#loader-wrapper").show();
+                }
+            }).ready(function () {
+                $("#loader-wrapper").hide();
+            });
+
+    </script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
