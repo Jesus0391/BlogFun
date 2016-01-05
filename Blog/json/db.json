@@ -16,5 +16,51 @@
         "Created": "2015-12-29T16:50:44.3332434-04:00"
       }
     ]
+  },
+  {
+    "Id": "60d57332-8633-4c11-bccf-396763ce2e17",
+    "Title": "Registro de Gastos",
+    "TitleUrl": null,
+    "ImagesUrls": [
+      "http://loremflickr.com/360/216/city"
+    ],
+    "CreatedOn": "2016-01-02T19:27:00.9885538-04:00",
+    "CreatedBy": "Jesús",
+    "Location": null,
+    "Posts": [
+      {
+        "HistoryId": "60d57332-8633-4c11-bccf-396763ce2e17",
+        "Body": "Este Proyecto ha tenido varias vertientes desde Paybill, hasta registro de gastos financieros y prevision de gastos para registrar metas a corto, mediano y largo plazo de los objetivos de las personas.\r\n\r\nPero en esta occasion como parte del Proyecto egoist tiene una relacion al Proyecto ofrecido en PA por lo tanto, seria una buena opción crear el modulo para PA y usar las partes communes en EGOIST para uso propio en estadisticas u opciones futuras, por ahora me limitare a registrar informacion pertinente a gastos.",
+        "Created": "2016-01-02T19:31:06.218248-04:00"
+      }
+    ]
+  },
+  {
+    "Id": "8c31ca35-31a8-4e89-8a6c-86ef3bd3fcdc",
+    "Title": "Ideas Expontaneas",
+    "TitleUrl": null,
+    "ImagesUrls": [
+      "http://loremflickr.com/360/216/city"
+    ],
+    "CreatedOn": "2016-01-02T20:11:04.8459005-04:00",
+    "CreatedBy": "Jesús",
+    "Location": null,
+    "Posts": [
+      {
+        "HistoryId": "8c31ca35-31a8-4e89-8a6c-86ef3bd3fcdc",
+        "Body": "<p>Notificador de Entradas nuevas en websites que sigo.</p>",
+        "Created": "2016-01-02T20:13:03.3907143-04:00"
+      },
+      {
+        "HistoryId": "8c31ca35-31a8-4e89-8a6c-86ef3bd3fcdc",
+        "Body": "<p>Un juego en que puedas ver la cantidad de muertes en batallas que haz tenido, por ejemplo: Un jugador puede ser caballero solo cuando ha participado y ganado con su propio avatar muchas batallas lo que lo pondria en la cima de entre los jugadores mas valeroso</p>",
+        "Created": "2016-01-03T13:43:15.0208023-04:00"
+      },
+      {
+        "HistoryId": "8c31ca35-31a8-4e89-8a6c-86ef3bd3fcdc",
+        "Body": "<p>Crear Sistema de Localizacion Remoto de Vehiculos.</p>",
+        "Created": "2016-01-03T17:40:01.0569498-04:00"
+      }
+    ]
   }
 ]
