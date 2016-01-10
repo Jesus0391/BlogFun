@@ -60,6 +60,11 @@
         "HistoryId": "8c31ca35-31a8-4e89-8a6c-86ef3bd3fcdc",
         "Body": "<p>Crear Sistema de Localizacion Remoto de Vehiculos.</p>",
         "Created": "2016-01-03T17:40:01.0569498-04:00"
+      },
+      {
+        "HistoryId": "8c31ca35-31a8-4e89-8a6c-86ef3bd3fcdc",
+        "Body": "<p>Un sistema que me permita ver las sesiones activas de los usuarios de intranet y pemirtirme hacer auto refresh remoto usando SignR quizas, de esta manera se podria enviar incluso una actualizacion remota de los sites por problemas de la cache.</p>",
+        "Created": "2016-01-08T11:16:23.402983-04:00"
       }
     ]
   }
