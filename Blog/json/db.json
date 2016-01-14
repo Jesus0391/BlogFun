@@ -60,6 +60,11 @@
         "HistoryId": "8c31ca35-31a8-4e89-8a6c-86ef3bd3fcdc",
         "Body": "<p>Crear Sistema de Localizacion Remoto de Vehiculos.</p>",
         "Created": "2016-01-03T17:40:01.0569498-04:00"
+      },
+      {
+        "HistoryId": "8c31ca35-31a8-4e89-8a6c-86ef3bd3fcdc",
+        "Body": "<p>Esta es una idea vieja surgiooo hace tiempo, antes de comprarme la Vitara, pens&eacute; como muchas personas que estan frenetica de tener su primer vehiculo porque por fin podrian invitar a la chica que le gusta al cine o podria llevarle al parque o incluso a un restaurante de ser necesario eso fue para mi uno de los incentivos para obtenerla pero queria algo de seguridad queria ver la forma de que mi vehiculo fuera seguro de que no pudieran robarlo un sistema de seguridad&nbsp;pens&eacute; por GPS, encendido del vehiculo y todas esas cosas seria jevi realizarla pero creo que lo mas correcto de pensar es que seria divertida desarroollarla por lo que se me ocurrio esta sencilla y economcia idea despues de todo no tengo la capacidad de desperdiciar demasiado dinero en juguetes que no podre usar asi como el LeapMotion por lo tanto la idea es:<br /><br /><br />Crear una aplciacion de rastreo que al recibir un mensaje SMS:</p>\r\n<ol>\r\n<li>Pueda encender el 4G</li>\r\n<li>Enviar su posicion actual</li>\r\n<li>Borrar el mensjae</li>\r\n<li>Enviar status de la bateria tambien .</li>\r\n</ol>",
+        "Created": "2016-01-11T00:41:48.9984981-04:00"
       }
     ]
   }
