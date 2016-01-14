@@ -6,7 +6,7 @@
         {
             post.Body = post.Body.Replace("<pre", "<pre class='prettyprint linenums'");
             <div class="cards-content">
-                <b>@post.Created</b>
+                <b><i class="fa fa-clock-o">&nbsp;</i>@post.Created</b>
                 <p>@Html.Raw(post.Body)</p>
             </div>
         }
