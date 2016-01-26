@@ -22,6 +22,10 @@ namespace BillToPay
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
+            var cdnServer = System.Configuration.ConfigurationManager.AppSettings["cdnServer"].ToString();
+            bundles.Add(new ScriptBundle("~/bundles/jarvis").Include(
+                    cdnServer + "/annyang.js",
+                    cdnServer + "/jarvis.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
