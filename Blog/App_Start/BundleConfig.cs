@@ -26,6 +26,12 @@ namespace Blog
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            var cdnServer = System.Configuration.ConfigurationManager.AppSettings["cdnServer"].ToString();
+            
+            bundles.Add(new ScriptBundle("~/bundles/jarvis", cdnServer).Include(
+                    "~/annyang.js",
+                    "~/speechkitt.js",
+                    "~/jarvis.js"));
         }
     }
 }
