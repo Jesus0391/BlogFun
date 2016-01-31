@@ -203,6 +203,9 @@
 
                     // try and match recognized text to one of the commands on the list
                     for (var j = 0, l = commandsList.length; j < l; j++) {
+                        //var result = commandsList[j].command.exec(commandText); //Originals
+                        var punctuationless = commandText.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+                        var commandText = punctuationless.replace(/\s{2,}/g, " ");
                         var result = commandsList[j].command.exec(commandText);
                         if (result) {
                             var parameters = result.slice(1);

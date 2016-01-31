@@ -9,11 +9,24 @@ $(function () {
         //        console.log(phrases);
         //    }
         //});
-
+        annyang.debug();
         annyang.addCommands({
-            'buen dia sam': function () {
-                console.log("prueba");
+            'Inori': function () {
+                alert("Buenos Dias");
                 responsiveVoice.speak("Buenos Dias Sr.", "Spanish Female");
+            },
+            'Nuevo Post *post': function (post) {
+                $("input[name='Title']").val(post);
+                $("#saveHistory").click();
+            },
+            'muestrame a *name': function (name) {
+                var i = 0;
+                $(".card-image-headline").each(function () {
+                    if (name == $(this).text().trim()) {
+                        $($(".btn-raised")[i+1])[0].click();
+                    }
+                    i++;
+                });
             }
         });
         annyang.setLanguage('es-Do');
